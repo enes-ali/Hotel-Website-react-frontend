@@ -16,6 +16,7 @@
     display: none;
     position: absolute;
     top: 50px;
+    right: -5px;
     background-color: rgba(212, 211, 211, 0.199);
     border: 3px black solid;
     width: 45px;

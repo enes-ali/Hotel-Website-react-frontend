@@ -3,10 +3,10 @@ import ArrowDownIcon from "../Sources/icons/down.png";
 import "../Styles/SlideDownButton.css";
 
 
-function slide(event)
+function slide(event, slide_offset)
 {
     window.scrollTo({
-        top: window.innerHeight,
+        top: slide_offset,
         behavior: "smooth"
     });
 }
@@ -14,7 +14,9 @@ function slide(event)
 function SlideDownButton(props){    
     
     return(
-        <div className="slide-down-button column align-vertical" onClick={slide}>
+        <div className="slide-down-button column align-vertical" 
+            onClick={(event) => {slide(event, props.slide_offset)} }>
+            
             <img className="first-arrow" src={ArrowDownIcon}/>
             <img className="second-arrow" src={ArrowDownIcon}/>
         </div>
