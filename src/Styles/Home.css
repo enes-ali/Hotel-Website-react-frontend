@@ -25,6 +25,20 @@
 	font-family: font-primary;
 }
 
+#info-block{
+	background-color: black;
+	width: 100%;
+	height: fit-content;
+	padding: 40px 20px;
+	box-sizing: border-box;
+}
+
+#info-block p {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: white;
+	margin: 0 10px 20px 10px;
+}
 
 @media screen and (min-width: 1200px){
 	
@@ -42,5 +56,18 @@
 	#slogan p{
 		font-size: 130px;
 		margin: 30px;
+	}
+
+	#info-block{
+		display: grid;
+		grid-template-columns: 40% 40%;
+		padding: 80px 100px;
+		justify-content: center;
+		column-gap: 100px;
+	}
+	
+	#info-block p {
+		color: white;
+		margin: 0 10px 20px 10px;
 	}
 }
