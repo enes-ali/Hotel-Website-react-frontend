@@ -1,0 +1,85 @@
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	background-color: rgba(200, 200, 200, 0.2);
+	backdrop-filter: blur(10px);
+	width: 100vw;
+	height: 70px;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+#brand-image{
+	width: 100px;
+}
+
+#call{
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin-right: 20px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+	font-size: 20px;
+
+	display: none;
+}
+
+#phone-icon{
+	width: 25px;
+	margin-left: 3px;
+}
+
+#book-room-btn{
+	height: 60%;
+	padding: 0 5px;
+	font-size: 28px;
+	margin-right: 5px;
+}
+
+#nav-language{
+	display: block;
+}
+
+
+@media screen and (min-width: 1200px){	
+	nav {
+		height: 100px;
+		padding: 0 50px;
+	}
+
+	#brand-image{
+		width: 150px;
+	}
+
+	#call{
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		margin-right: 20px;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		cursor: pointer;
+		font-size: 20px;
+		
+		display: block;
+	}
+
+	#phone-icon{
+		width: 25px;
+		margin-left: 3px;
+	}
+
+	#book-room-btn{
+		height: 65%;
+		padding: 0 10px;
+		margin-right: 20px;
+		font-size: 35px;
+	}
+	
+}

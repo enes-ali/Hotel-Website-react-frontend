@@ -1,0 +1,50 @@
+.slide-down-button{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.slide-down-button > img {
+    width: 30px;
+    opacity: 0%;
+}
+
+.first-arrow{
+    animation: first-arrow 1s linear 0s 2 forwards;
+}
+
+.second-arrow{
+    animation: second-arrow 1s linear 0s 2 forwards;
+}
+
+
+@keyframes first-arrow{
+    from{
+        opacity: 10%;
+        margin-top: -10px;
+    }
+
+    to{
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
+
+@keyframes second-arrow{
+    from{
+        opacity: 10%;
+        margin-top: -20px;
+    }
+
+    50%{
+        margin-top: -3px;
+        opacity: 80%;
+    }
+
+    to{
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
