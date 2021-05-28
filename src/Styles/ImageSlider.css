@@ -1,0 +1,148 @@
+.image-slider-container{
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image-slider > div{
+    overflow: hidden;
+    position: relative;
+}
+
+.image-slider img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.slider-previous-image{
+    width: 260px;
+    height: 260px;
+    margin-right: 30%;
+}
+
+.slider-current-image{
+    width: 50%;
+    height: 100%;
+}
+
+.slider-next-image{
+    width: 260px;
+    height: 260px;
+    margin-left: 5%;
+}
+
+.navigation-image{
+    object-fit: cover;
+    object-position: center;
+    width: 120%;
+    height: 120%;
+    filter: blur(10px);
+    transition: filter 0.7s;
+}
+
+.slider-previous-image:hover .navigation-image, .slider-next-image:hover .navigation-image{
+    filter: none;
+}
+
+.navigation-corp-image{
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.slider-next-image > .navigation-corp-image{
+    clip-path: path("m 147.84133,132.4136 -27.63338,27.63221 c -1.33226,1.33227 -3.49345,1.33227 -4.82571,0 l -3.22332,-3.22332 c -1.33084,-1.33086 -1.33226,-3.48639 -0.006,-4.82008 l 21.90044,-22.00169 -21.89912,-22.0031 c -1.328,-1.3337 -1.32515,-3.48923 0.006,-4.82007 l 3.22331,-3.223335 c 1.33226,-1.33228 3.49345,-1.33228 4.82571,0 l 27.63206,27.633635 c 1.33225,1.33227 1.33225,3.49348 0,4.82575 z");
+}
+
+
+.slider-previous-image  .navigation-corp-image{
+    clip-path: path("m 112.15868,127.58641 27.63338,-27.632208 c 1.33226,-1.33227 3.49345,-1.33227 4.82571,0 l 3.22332,3.223318 c 1.33084,1.33086 1.33226,3.48639 0.006,4.82008 l -21.90044,22.00169 21.89912,22.0031 c 1.328,1.3337 1.32515,3.48923 -0.006,4.82007 l -3.22331,3.22333 c -1.33226,1.33228 -3.49345,1.33228 -4.82571,0 l -27.63206,-27.63363 c -1.33225,-1.33227 -1.33225,-3.49348 0,-4.82575 z");
+}
+
+
+
+
+@media screen and (min-width: 1200px){
+    .image-slider-container{
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .image-slider{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image-slider > div{
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .image-slider img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    
+    .slider-previous-image{
+        width: 260px;
+        height: 260px;
+        margin-right: 5%;
+    }
+    
+    .slider-current-image{
+        width: 50%;
+        height: 100%;
+    }
+    
+    .slider-next-image{
+        width: 260px;
+        height: 260px;
+        margin-left: 5%;
+    }
+    
+    .navigation-image{
+        object-fit: cover;
+        object-position: center;
+        width: 120%;
+        height: 120%;
+        filter: blur(10px);
+        transition: filter 0.7s;
+    }
+
+    .slider-previous-image:hover .navigation-image, .slider-next-image:hover .navigation-image{
+        filter: none;
+    }
+    
+    .navigation-corp-image{
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .slider-next-image > .navigation-corp-image{
+        clip-path: path("m 147.84133,132.4136 -27.63338,27.63221 c -1.33226,1.33227 -3.49345,1.33227 -4.82571,0 l -3.22332,-3.22332 c -1.33084,-1.33086 -1.33226,-3.48639 -0.006,-4.82008 l 21.90044,-22.00169 -21.89912,-22.0031 c -1.328,-1.3337 -1.32515,-3.48923 0.006,-4.82007 l 3.22331,-3.223335 c 1.33226,-1.33228 3.49345,-1.33228 4.82571,0 l 27.63206,27.633635 c 1.33225,1.33227 1.33225,3.49348 0,4.82575 z");
+    }
+    
+    
+    .slider-previous-image  .navigation-corp-image{
+        clip-path: path("m 112.15868,127.58641 27.63338,-27.632208 c 1.33226,-1.33227 3.49345,-1.33227 4.82571,0 l 3.22332,3.223318 c 1.33084,1.33086 1.33226,3.48639 0.006,4.82008 l -21.90044,22.00169 21.89912,22.0031 c 1.328,1.3337 1.32515,3.48923 -0.006,4.82007 l -3.22331,3.22333 c -1.33226,1.33228 -3.49345,1.33228 -4.82571,0 l -27.63206,-27.63363 c -1.33225,-1.33227 -1.33225,-3.49348 0,-4.82575 z");
+    }
+    
+}

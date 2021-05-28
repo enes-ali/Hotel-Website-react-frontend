@@ -4,9 +4,21 @@ import "../Styles/Global.css";
 import HomeImage from "../Sources/images/home-image.jpg";
 import Navbar from "../Components/Navbar.js";
 import SlideDownButton from "../Components/SlideDownButton";
+import ImageSlider from "../Components/ImageSlider";
+
+import cafe_image from "../Sources/images/hotel/cafe.jpg";
+import bar_image from "../Sources/images/hotel/bar.jpg";
+import pool_image from "../Sources/images/hotel/pool.jpg";
+import pool_image2 from "../Sources/images/hotel/pool_2.jpg";
+import restoraunt_image from "../Sources/images/hotel/restoraunt.jpg";
+import sign_image from "../Sources/images/hotel/sign.jpg";
 
 class Home extends React.Component{
 	
+	state = {
+		images: [cafe_image, bar_image, pool_image, pool_image2, restoraunt_image, sign_image],
+	}
+
 	rootElement = window.document;
 
 	// Be aware of the navbar
@@ -14,13 +26,12 @@ class Home extends React.Component{
 
 	render()
 	{
-		//console.log(getComputedStyle(this.rootElement, null).getPropertyValue("--navbar-height"));
-
 		return ( 
 			
 			<div id="home-main">
 				<Navbar />
 
+				{/* Banner */}
 				<div id="banner" className="row align-center">
 					<img src={HomeImage} id="home-image"/>
 					
@@ -30,9 +41,10 @@ class Home extends React.Component{
 					</div>
 
 					<SlideDownButton slide_offset={ this.get_slide_offset() }/>
-
 				</div>
 
+
+				{/* Info */}
 				<div id="info-block">
 					
 					<p>
@@ -56,6 +68,12 @@ class Home extends React.Component{
 						Donec dignissim vitae ligula at ullamcorper. 
 						</p>
 					</div>
+				</div>
+
+
+				{/* Gallery */}
+				<div id="gallery">
+					<ImageSlider images={ this.state.images } />
 				</div>
 
 
