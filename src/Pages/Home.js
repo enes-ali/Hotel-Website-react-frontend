@@ -6,12 +6,12 @@ import Navbar from "../Components/Navbar.js";
 import SlideDownButton from "../Components/SlideDownButton";
 import ImageSlider from "../Components/ImageSlider";
 
-import cafe_image from "../Sources/images/hotel/cafe.jpg";
-import bar_image from "../Sources/images/hotel/bar.jpg";
-import pool_image from "../Sources/images/hotel/pool.jpg";
-import pool_image2 from "../Sources/images/hotel/pool_2.jpg";
-import restoraunt_image from "../Sources/images/hotel/restoraunt.jpg";
-import sign_image from "../Sources/images/hotel/sign.jpg";
+import cafe_image from "../Sources/images/hotel/cafe_1920_1080.jpg";
+import bar_image from "../Sources/images/hotel/bar_1920_1080.jpg";
+import pool_image from "../Sources/images/hotel/pool_1920_1080.jpg";
+import pool_image2 from "../Sources/images/hotel/pool_2_1920_1080.jpg";
+import restoraunt_image from "../Sources/images/hotel/restoraunt_1920_1080.jpg";
+import sign_image from "../Sources/images/hotel/sign_1920_1080.jpg";
 
 class Home extends React.Component{
 	
