@@ -1,0 +1,50 @@
+.overlay-image-container{
+    visibility: hidden;
+    width: 30vw;
+    height: 30vh;
+    position: fixed;
+    overflow: hidden; 
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(31, 30, 30, 0.966);
+    z-index: 20;
+    transition: 0.5s ease-in;  
+}
+
+.overlay-image-container-active{
+    visibility: visible;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-overlay-image{
+    width: 5%;
+    right: 20px;
+    top: 60px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.close-overlay-image:hover{
+    background-color: rgba(204, 201, 201, 0.651);
+}
+
+
+@media screen and (min-width: 800px){
+
+    .close-overlay-image{
+        width: 2%;
+        right: 20px;
+        top: 20px;
+    }
+}
