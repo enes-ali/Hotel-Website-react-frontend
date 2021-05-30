@@ -45,27 +45,24 @@ class ImageSlider extends React.Component{
     render()
     {
         return(
-            <div className="image-slider-container">
-                <div className="image-slider">
+            <div className="image-slider">
 
-                    <div className="slider-previous-image" onClick={this.slide_backward}> 
-                        <img className="navigation-image" src={this.get_previous_image()} /> 
-                        <img className="navigation-corp-image" src={this.get_previous_image()} /> 
-                    </div>
-                    
-                    <div className="slider-current-image" onClick={this.open_overlay_image}> 
-                        <img src={this.state.images[this.state.current_image]} /> 
-                    </div>
-                    
-                    <div className="slider-next-image" onClick={this.slide_forward}>
-                        <img className="navigation-image" src={this.get_next_image()} />
-                        <img className="navigation-corp-image" src={this.get_next_image()} /> 
-                    </div>
+                <div className="slider-nav-button slider-previous-button" onClick={this.slide_backward}> 
+                    <img className="blured-image" src={this.get_previous_image()} /> 
+                    <img className="slider-clippath-arrow" src={this.get_previous_image()} /> 
+                </div>
+                
+                <img className="slider-current-image" 
+                    src={this.state.images[this.state.current_image]}  
+                    onClick={this.open_overlay_image}/> 
+            
+                <div className="slider-nav-button slider-next-button" onClick={this.slide_forward}>
+                    <img className="blured-image" src={this.get_next_image()} />
+                    <img className="slider-clippath-arrow" src={this.get_next_image()} /> 
                 </div>
 
                 <OverlayImageView image={this.state.images[this.state.current_image]} 
-                    is_active={this.state.is_overlay_active} close_function={this.close_overlay_image}/>
-
+                is_active={this.state.is_overlay_active} close_function={this.close_overlay_image}/>
             </div>
         );
     }
