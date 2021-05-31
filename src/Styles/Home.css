@@ -59,23 +59,21 @@
 		z-index: -1;
 	}
 	
-	#slogan p{
-		font-size: 70px;
-		margin: 10px;
-		font-family: font-primary;
-	}
 	
+	#slogan p{
+		font-size: 130px;
+		margin: 30px;
+	}
+
 	#info-block{
-		background-color: black;
-		width: 100%;
-		height: fit-content;
-		padding: 40px 20px;
-		box-sizing: border-box;
+		display: grid;
+		grid-template-columns: 40% 40%;
+		padding: 80px 40px;
+		justify-content: center;
+		column-gap: 100px;
 	}
 	
 	#info-block p {
-		font-family: sans-serif;
-		font-weight: bold;
 		color: white;
 		margin: 0 10px 20px 10px;
 	}
