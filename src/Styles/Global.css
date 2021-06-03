@@ -60,7 +60,7 @@
 
 .border-button{
 	background-color: transparent;
-	border: 3px solid black;
+	border: 3px solid var(--color-secondary);
 	font-weight: bold;
 	display: flex;
 	align-items: center;
@@ -71,7 +71,7 @@
     -moz-user-select: none;
     -webkit-user-select: none;
     text-decoration: none;
-    color: black;
+    color: var(--color-secondary);
 }
 
 .underline-text{

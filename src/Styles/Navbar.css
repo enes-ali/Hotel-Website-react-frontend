@@ -1,5 +1,8 @@
 *{
-	--navbar-height: 70px;
+	--navbar-height: 80px;
+	--navbar-active-height: 70px;
+	--color-primary: black;
+	--color-secondary: white;
 }
 
 nav {
@@ -7,12 +10,17 @@ nav {
 	top: 0;
 	left: 0;
 	z-index: 3;
-	background-color: rgba(200, 200, 200, 0.2);
-	backdrop-filter: blur(10px);
 	width: 100vw;
 	height: var(--navbar-height);
 	box-sizing: border-box;
 	padding: 0 10px;
+	transition: 0.3s;
+}
+
+.navbar-active{
+	height: var(--navbar-active-height);
+	background-color: var(--color-primary);
+	border-bottom: white 4px solid;
 }
 
 #brand-image{
@@ -29,13 +37,8 @@ nav {
 	-webkit-user-select: none;
 	cursor: pointer;
 	font-size: 20px;
-
 	display: none;
-}
-
-#phone-icon{
-	width: 25px;
-	margin-left: 3px;
+	color: var(--color-secondary);
 }
 
 #book-room-btn{
@@ -56,27 +59,26 @@ nav {
 		padding: 0 50px;
 	}
 
+	.navbar-active{
+		height: 80px;
+	}	
+
 	#brand-image{
 		width: 150px;
+		transition: 0.3s;
 	}
 
+	.navbar-active #brand-image{
+		width: 120px;
+	}
+	
 	#call{
-		justify-content: center;
-		align-items: center;
-		font-weight: bold;
-		margin-right: 20px;
-		user-select: none;
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		cursor: pointer;
-		font-size: 20px;
-		
 		display: block;
 	}
 
 	#phone-icon{
 		width: 25px;
-		margin-left: 3px;
+		margin-left: 5px;
 	}
 
 	#book-room-btn{
