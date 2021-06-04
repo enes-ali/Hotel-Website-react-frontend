@@ -25,65 +25,67 @@ class Rooms extends React.Component{
 
         current_room: "room-double",
         mobile_show_room_details: false,
+        is_current_room_changed: false,
     }
 
     show_room_details = (event) => {
         this.setState({
             current_room: event.currentTarget.id,
-            mobile_show_room_details: true
+            mobile_show_room_details: true,
+            is_current_room_changed: true
         });
+        
+        setTimeout(() => { this.setState({ is_current_room_changed: false }) }, 800);
     }
 
-    show_room_types = (event) => { this.setState({mobile_show_room_details: false}); }
+    show_room_types = (event) => { this.setState({mobile_show_room_details: false}) }
 
-    get_container_class = () => this.state.mobile_show_room_details ? " rooms-container-show-details" : "";
+    get_container_class = () => this.state.mobile_show_room_details ? "rooms-container-show-details" : "";
 
-    get_current_room = () => {
-        let room;
-        room = this.state.rooms.filter((room) => this.state.current_room === room.name)[0];
-        return room;
-    }
-
-    get_room_spec_list = () => {
-        return this.get_current_room().specs.map( (spec) => {
-            return(
-                <li>{spec}</li>
-            );
-        });
-    }
+    get_current_room = () => this.state.rooms.filter( room => this.state.current_room === room.name )[0];
+        
+    get_room_spec_list = () => this.get_current_room().specs.map( spec => (<li>{spec}</li>) );
 
     render()
     {
         return(
             <div id="rooms-container" className={this.get_container_class()}>
-                
+
+                {/* All Rooms */}
                 <div id="all-rooms" className="column align-vertical">
                     <h2 id="rooms-title">ROOMS</h2>
 
                     <div id="room-types">
-                        <div onClick={this.show_room_details} className="row align-center room-type" id="room-double"> 
+                        <div onClick={this.show_room_details} className="row align-center room-type" 
+                            id="room-double"> 
                             <img src={DoubleRoomImage}/> 
                             <span>Double</span>
                         </div>
 
-                        <div onClick={this.show_room_details} className="row align-center room-type" id="room-twin">
+                        <div onClick={this.show_room_details} className="row align-center room-type" 
+                            id="room-twin">
                             <img src={TwinRoomImage}/> 
                             <span>Twin</span>
                         </div>
 
-                        <div onClick={this.show_room_details} className="row align-center room-type" id="room-triple"> 
+                        <div onClick={this.show_room_details} className="row align-center room-type" 
+                            id="room-triple"> 
                             <img src={TripleRoomImage}/> 
                             <span>Triple</span>
                         </div>
                     </div>
                 </div>
 
-
+                {/* Details */}
                 <div id="room-details">
                     <img src={BackArrow} id="back-to-room-types-btn" onClick={this.show_room_types}/>
-                    <img src={this.get_current_room().image} id="room-detail-image" />
                     
-                    <div id="room-specs-card">
+                    <img src={this.get_current_room().image} id="room-detail-image" 
+                        className={this.state.is_current_room_changed ? "fade-in-from-top-left" : ""}/>
+                    
+                    <div id="room-specs-card" 
+                        className={this.state.is_current_room_changed ? "fade-in-from-bottom-right" : ""}>
+                        
                         <h1 id="specs-room-name">{this.get_current_room().name}</h1>
                         <h2 id="specs-title">Specs:</h2>
                         
@@ -94,7 +96,6 @@ class Rooms extends React.Component{
                         <Link id="book-current-room-btn">BOOK ROOM</Link>
                     </div>
                 </div>
-
             </div>
         );
     }
