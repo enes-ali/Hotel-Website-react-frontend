@@ -20,7 +20,6 @@ class Navbar extends React.Component{
 	}
 
 	onScroll = (event) => {
-		console.log(window.scrollY);
 		if(window.scrollY > 100){
 			this.setState({
 				nav_class: "navbar-active"
