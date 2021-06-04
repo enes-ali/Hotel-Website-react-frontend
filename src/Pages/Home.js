@@ -5,6 +5,7 @@ import HomeImage from "../Sources/images/home-image.jpg";
 import Navbar from "../Components/Navbar.js";
 import SlideDownButton from "../Components/SlideDownButton";
 import ImageSlider from "../Components/ImageSlider";
+import Rooms from "../Components/Rooms";
 
 import cafe_image from "../Sources/images/hotel/cafe_1920_1080.jpg";
 import bar_image from "../Sources/images/hotel/bar_1920_1080.jpg";
@@ -77,13 +78,8 @@ class Home extends React.Component{
 				</div>
 
 
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				{/* Rooms */}
+				<Rooms />
 
 			</div>
 		);
