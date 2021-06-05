@@ -2,10 +2,12 @@ import React from "react";
 import "../Styles/Home.css";
 import "../Styles/Global.css";
 import HomeImage from "../Sources/images/home-image.jpg";
+
 import Navbar from "../Components/Navbar.js";
 import SlideDownButton from "../Components/SlideDownButton";
 import ImageSlider from "../Components/ImageSlider";
 import Rooms from "../Components/Rooms";
+import BarsRestaurants from "../Components/BarsRestaurants";
 
 import cafe_image from "../Sources/images/hotel/cafe_1920_1080.jpg";
 import bar_image from "../Sources/images/hotel/bar_1920_1080.jpg";
@@ -13,6 +15,8 @@ import pool_image from "../Sources/images/hotel/pool_1920_1080.jpg";
 import pool_image2 from "../Sources/images/hotel/pool_2_1920_1080.jpg";
 import restoraunt_image from "../Sources/images/hotel/restoraunt_1920_1080.jpg";
 import sign_image from "../Sources/images/hotel/sign_1920_1080.jpg";
+
+
 
 class Home extends React.Component{
 	
@@ -77,10 +81,10 @@ class Home extends React.Component{
 					<ImageSlider images={ this.state.images } />
 				</div>
 
-
 				{/* Rooms */}
 				<Rooms />
 
+				<BarsRestaurants />
 			</div>
 		);
 	}
