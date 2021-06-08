@@ -69,7 +69,8 @@
     background-color: black;
     width: 100%;
     height: 50%;
-    padding: 10px 15px;
+    padding: 20px 15px;
+    box-sizing: border-box;
 }
 
 #place-detail-name{
@@ -82,5 +83,121 @@
     color: white;
     width: 90%;
     word-break: break-all;
-    
+}
+
+
+
+/* Effects */
+
+.fade-in-from-top-right{
+    animation: fade-in-from-top-right 0.7s ease-in-out forwards;
+}
+@keyframes fade-in-from-top-right{
+    from{
+        opacity: 0%;
+        right: -80%;
+        top: -80%;
+    }
+
+    to{
+        opacity: 100%;
+        right: 0%;
+        top: 0%;
+    }
+}
+
+.fade-in-from-bottom-left{
+    animation: fade-in-from-bottom-left 0.7s ease-in-out forwards;
+}
+@keyframes fade-in-from-bottom-left{
+    from{
+        opacity: 0%;
+        left: -50%;
+        bottom: -50%;
+    }
+
+    to{
+        opacity: 100%;
+        left: 20px;
+        bottom: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 980px){
+    #bars-restaurants{
+        width: 100vw;
+        height: 70vh;
+        transition: none;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        grid-template-columns: 55% 50%;
+    }
+    .show-palce-detail{
+        margin-left: 0;
+    }
+
+
+    #places-container{
+        padding-top: 0px;
+        height: 100%;
+        grid-column: 2/3;
+        grid-row: 1 /2;
+    }
+
+    .place-img{
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+    }
+
+
+    /* Details */
+    #place-details{
+        grid-column: 1/2;
+        grid-row: 1 /2;
+    }
+
+    #show-all-places-btn{
+        display: none;
+    }
+
+    #place-detail-image{
+        width: 75%;
+        height: 60%;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #place-detail-card{
+        width: 60%;
+        height: 50%;
+        padding: 20px 15px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1200px){
+    #bars-restaurants{
+        height: 85vh;
+        grid-template-columns: 50% 50%;
+    }
+
+    .place-img{
+        cursor: pointer;
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Details */
+    #place-detail-card{
+        width: 50%;
+    }
 }

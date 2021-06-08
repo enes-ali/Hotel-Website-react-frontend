@@ -85,6 +85,9 @@ class Home extends React.Component{
 				<Rooms />
 
 				<BarsRestaurants />
+
+				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				
 			</div>
 		);
 	}
