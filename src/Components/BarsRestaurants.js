@@ -1,17 +1,17 @@
 import React from "react";
 import "../Styles/BarsRestaurants.css";
 
-import BarBrandImage from "../Sources/images/bars_restaurants/bar_1.jpg";
-import AlexBarBrandImage from "../Sources/images/bars_restaurants/bar_2.png";
-import CoffeShopBrandImage from "../Sources/images/bars_restaurants/coffe_brand.jpg";
-import RestaurantBrandImage from "../Sources/images/bars_restaurants/restaurant.png";
+import BarBrandImage from "../Resources/images/bars_restaurants/bar_1.jpg";
+import AlexBarBrandImage from "../Resources/images/bars_restaurants/bar_2.png";
+import CoffeShopBrandImage from "../Resources/images/bars_restaurants/coffe_brand.jpg";
+import RestaurantBrandImage from "../Resources/images/bars_restaurants/restaurant.png";
 
-import CoffeShopImage from "../Sources/images/bars_restaurants/coffe_shop.jpg";
-import RestaurantImage from "../Sources/images/bars_restaurants/restaurant.jpg";
-import BarImage from "../Sources/images/bars_restaurants/bar.jpg";
-import AlexBarImage from "../Sources/images/bars_restaurants/alex_bar.jpg";
+import CoffeShopImage from "../Resources/images/bars_restaurants/coffe_shop.jpg";
+import RestaurantImage from "../Resources/images/bars_restaurants/restaurant.jpg";
+import BarImage from "../Resources/images/bars_restaurants/bar.jpg";
+import AlexBarImage from "../Resources/images/bars_restaurants/alex_bar.jpg";
 
-import BackArrowIcon from "../Sources/icons/left-arrow_150x150.svg";
+import BackArrowIcon from "../Resources/icons/left-arrow_150x150.svg";
 
 
 class BarsRestaurants extends React.Component{

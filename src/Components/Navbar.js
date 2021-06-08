@@ -1,8 +1,8 @@
 import React from "react";
 import "../Styles/Navbar.css";
 import "../Styles/Global.css";
-import BrandImage from "../Sources/icons/Logo.png";
-import PhoneIcon from "../Sources/icons/phone-solid.svg";
+import BrandImage from "../Resources/icons/Logo.png";
+import PhoneIcon from "../Resources/icons/phone-solid.svg";
 import DropdownMenu from "./DropdownMenu";
 import {Link} from "react-router-dom";
 

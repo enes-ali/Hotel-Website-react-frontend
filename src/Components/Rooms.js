@@ -2,10 +2,10 @@ import React from "react";
 import "../Styles/Rooms.css";
 import { Link } from 'react-router-dom';
 
-import DoubleRoomImage from "../Sources/images/rooms/double.jpg";
-import TwinRoomImage from "../Sources/images/rooms/twin.jpg";
-import TripleRoomImage from "../Sources/images/rooms/triple.jpg";
-import BackArrow from "../Sources/icons/left-arrow_150x150.svg";
+import DoubleRoomImage from "../Resources/images/rooms/double.jpg";
+import TwinRoomImage from "../Resources/images/rooms/twin.jpg";
+import TripleRoomImage from "../Resources/images/rooms/triple.jpg";
+import BackArrow from "../Resources/icons/left-arrow_150x150.svg";
 
 
 

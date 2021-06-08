@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowDownIcon from "../Sources/icons/down.png";
+import ArrowDownIcon from "../Resources/icons/down.png";
 import "../Styles/SlideDownButton.css";
 
 

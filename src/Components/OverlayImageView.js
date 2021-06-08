@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/OverlayImageView.css";
-import CloseIcon from "../Sources/icons/close.svg";
+import CloseIcon from "../Resources/icons/close.svg";
 
 
 class OverlayImageView extends React.Component{
