@@ -91,7 +91,21 @@ class Home extends React.Component{
 
 				<Location />
 
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				<div id="how-to-reach">
+					<div>
+						<h1 id="how-to-reach-title">How To Reach The Hotel</h1>
+						<p id="how-to-reach-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat dui ac efficitur mollis. 
+						Phasellus venenatis sem vel maximus luctus. Donec tempor tempus turpis eu rhoncus. 
+						Quisque rhoncus sit amet est ut pretium. Mauris vel facilisis leo, a accumsan nunc. 
+						Suspendisse vel tempor diam. Nulla facilisis varius justo, lacinia hendrerit ex tristique a.
+						Nunc viverra laoreet lacus. Duis consectetur vitae ex sed semper. Duis vitae eros quis velit ultricies ornare nec quis dui. 
+						Nulla consectetur ex finibus magna finibus semper. Etiam tempor erat vel posuere bibendum. Pellentesque euismod iaculis posuere. 
+						</p>
+					</div>
+				</div>
+				
+				<br /><br /><br /><br /><br /><br /><br /><br />
 				
 			</div>
 		);
