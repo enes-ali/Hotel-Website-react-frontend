@@ -10,6 +10,7 @@ import ImageSlider from "../Components/ImageSlider";
 import Rooms from "../Components/Rooms";
 import BarsRestaurants from "../Components/BarsRestaurants";
 import Location from "../Components/Location";
+import Footer from "../Components/Footer";
 
 /* Slider Images */
 import cafe_image from "../Resources/images/hotel/cafe_1920_1080.jpg";
@@ -105,7 +106,7 @@ class Home extends React.Component{
 					</div>
 				</div>
 				
-				<br /><br /><br /><br /><br /><br /><br /><br />
+				<Footer />
 				
 			</div>
 		);
