@@ -20,6 +20,7 @@ import pool_image2 from "../Resources/images/hotel/pool_2_1920_1080.jpg";
 import restoraunt_image from "../Resources/images/hotel/restoraunt_1920_1080.jpg";
 import sign_image from "../Resources/images/hotel/sign_1920_1080.jpg";
 
+import Video from "../Resources/movie.mp4";
 
 
 class Home extends React.Component{
@@ -42,14 +43,15 @@ class Home extends React.Component{
 
 				{/* Banner */}
 				<div id="banner" className="row align-center">
-					<img src={HomeImage} id="home-image"/>
+					{/* <img src={HomeImage} id="home-image"/> */}
+					<video src={Video} id="welcome-video" autoPlay loop/>
 					
 					<div id="slogan">
 						<p className="underline-text">FEEL</p> 
 						<p className="underline-text">THE WIND</p>
 					</div>
 
-					<SlideDownButton slide_offset={ this.get_slide_offset() }/>
+					<SlideDownButton slide_offset={ this.get_slide_offset() } />
 				</div>
 
 
